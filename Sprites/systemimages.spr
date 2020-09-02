@@ -1,0 +1,6 @@
+sprite_table
+@referenceWidth=1024
+@referenceHeight=256
+@tmaterial=interface
+@skip=off
+systemicon_default all_interface 1 116 34 34

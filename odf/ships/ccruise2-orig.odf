@@ -1,0 +1,115 @@
+#include "cruise2.odf"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Gul Vystan Class"
+
+//tooltips
+tooltip = "CARD_CRUISE2"
+verboseTooltip = "CARD_CRUISE2_V"
+
+//Race which can build ship & starting race of ship
+race = "cardassian"
+
+//Amount of time required to build ship
+buildTime = 15.0
+
+//Number of officers required to build this ship
+officerCost = 8
+
+//Number of crew required to build ship & Starting crew
+crewCost = 350
+
+//Dilithium Cost to build
+dilithiumCost = 150
+
+//Metal Cost to build
+metalCost = 0
+
+//Max Shield Strength & Begining Shield Strength <500
+maxHealth = 120
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 30
+enginesHitPoints = 25
+weaponsHitPoints = 40
+lifeSupportHitPoints = 25
+sensorsHitPoints = 30
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.3
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 10
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Imsarir" "Ginmar" "Hlotild" "Svidi" "Svird" "Thoning" "Svoding" "Lostli"    
+	"Alding" "Eylimi" "Slurnskar" "Frafnir" "Hulding" "Hjodvor" "Narri" "Saering"
+	"Aeri" "Sarkmaer" "Gintild" "Hjottar" "Galfrek" "Borr" "Nod" "Orgi"
+	"Graki" "Slorir" "Sorolf" "Freig" "Distleif" "Sottir" "Swarm" "Ithjorg"
+	"Vari" "Dirip" "Hroa" "Soti" "Skjard" "Hamid" "Varmir" "Fura"
+	"Dinnbild" "Gifnhild" "Sarmar" "Sar" "Nirknar" "Bading" "Fjotra" "Koldaring"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "cc2phas"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04"
+
+// Cloaking Device
+weapon2 = "gccloak"
+weaponHardpoints2 = "hp26"
+
+// Special Weapon flux wave
+weapon3 = "gfluxwave"
+weaponHardpoints3 = "hp05"
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp06" "hp07" "hp08" "hp09" "hp10"
+lifeSupportTargetHardpoints = "hp11" "hp12" "hp13" "hp14" "hp15"
+weaponsTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp26"
+shieldGeneratorTargetHardpoints = "hp16" "hp17" "hp18" "hp19" "hp20"
+sensorsTargetHardpoints = "hp21" "hp22" "hp23" "hp24" "hp25"
+hullTargetHardpoints = "hp06" "hp08" "hp10"  "hp12" "hp14" "hp16" "hp18" "hp20" "hp24" "hp25"
+criticalTargetHardpoints = "hp07" "hp09" "hp11" "hp13" "hp17" "hp19" "hp22" "hp23"
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.75f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.30f
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 0.75f
+//**********************************************************************
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "X"
+hotkeyLabel = "HOTKEY_F6"
+
+scaleSOD = 1.44
